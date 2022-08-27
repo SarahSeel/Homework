@@ -1,11 +1,15 @@
 // First portion of HW
 
 let pizzaPlace = "Imo's Pizza"; // String
+console.log (typeof pizzaPlace);
+
 let numberOfToppings = 2; // Num
+console.log(typeof numberOfToppings);
 
 // Second Portion of HW
 `"${pizzaPlace} has many great options of pizza toppings, but I only like ${numberOfToppings}. Which is Hamburger and Bacon."`;
-
+console.log(`${pizzaPlace} has many great options of pizza toppings, but I only like ${numberOfToppings}. Which is Hamburger and Bacon.`
+);
 // Third Portion of HW
 
 if (numberOfToppings > 10) {
@@ -13,3 +17,6 @@ if (numberOfToppings > 10) {
 } else {
   console.log("Quality, not quantity.");
 }
+
+// Bonus Challenge
+
