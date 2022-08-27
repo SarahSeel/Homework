@@ -1,7 +1,7 @@
 // First portion of HW
 
 let pizzaPlace = "Imo's Pizza"; // String
-console.log (typeof pizzaPlace);
+console.log(typeof pizzaPlace);
 
 let numberOfToppings = 2; // Num
 console.log(typeof numberOfToppings);
