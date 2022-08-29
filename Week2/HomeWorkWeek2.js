@@ -24,11 +24,6 @@ if (numberOfToppings > 10) {
 
 let x = 0;
 while (x <= 10) {
-  console.log(
-    `${pizzaPlace} string ${x}, gain ${numberOfToppings} toppings at ${pizzaPlace}, we have ${x +
-      2} toppings.`
-  );
-  console.log("Quality, not quantity.");
   console.log(x);
   x += 2;
 }
