@@ -9,9 +9,7 @@ console.log(typeof numberOfToppings);
 // Second Portion of HW
 
 `"${pizzaPlace} has many great options of pizza toppings, but I only like ${numberOfToppings}. Which is Hamburger and Bacon."`;
-console.log(
-  `${pizzaPlace} has many great options of pizza toppings, but I only like ${numberOfToppings}. Which is Hamburger and Bacon.`
-);
+
 // Third Portion of HW
 
 if (numberOfToppings > 10) {
@@ -22,8 +20,9 @@ if (numberOfToppings > 10) {
 
 // Bonus Challenge
 
-let x = 0;
+let x = 1;
 while (x <= 10) {
   console.log(x);
-  x += 2;
+  console.log(x % 2 == 0);
+  x++;
 }
