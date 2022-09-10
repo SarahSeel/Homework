@@ -27,7 +27,7 @@ function getPizzaOrder(size, crust, ...toppings) {
     order += `${topping}`;
   }
   console.log(`${order}. Coming up!`);
-  return;
+  return [size, crust, toppings];
 }
 let customerOrder = getPizzaOrder(
   "medium",
@@ -43,7 +43,7 @@ let customerOrder = getPizzaOrder(
 // prints something like "...Cooking pizza..."
 // outputs a pizza Object with appropriate key-value pairs for size, crust, and toppings
 
-function preparePizza([orderSize, orderCrust, orderToppings]) {
+function preparePizza(orderSize, orderCrust, orderToppings) {
   console.log("...Pizza cooking...");
   return {
     size: orderSize,
@@ -61,7 +61,7 @@ let cookedPizza = preparePizza(customerOrder);
 // outputs the same pizza Object that was passed in
 function servePizza(pizza) {
   let orderReady = `Order up! Here's your ${pizza.size} ${pizza.crust} with`;
-  for (let topping of pizza.toppings) {
+  for (let topping in pizza.toppings) {
     orderReady += `${topping}`;
   }
   console.log(`${orderReady} ... Enjoy!`);
