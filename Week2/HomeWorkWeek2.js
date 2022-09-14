@@ -1,10 +1,10 @@
 // First portion of HW
 
 let pizzaPlace = "Imo's Pizza"; // String
-console.log(typeof pizzaPlace);
+console.log(typeof pizzaPlace, pizzaPlace);
 
-let numberOfToppings = 2; // Num
-console.log(typeof numberOfToppings);
+let numberOfToppings = 10; // Num
+console.log(typeof numberOfToppings, numberOfToppings);
 
 // Second Portion of HW
 
@@ -20,9 +20,8 @@ if (numberOfToppings > 10) {
 
 // Bonus Challenge
 
-let x = 1;
-while (x <= 10) {
-  console.log(x);
-  console.log(x % 2 == 0);
-  x++;
+for (let i = 1; i <= numberOfToppings; i++) {
+  if (i % 2 === 0) {
+    console.log(i);
+  }
 }

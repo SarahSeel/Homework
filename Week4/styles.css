@@ -49,12 +49,14 @@ width: auto;
 height: auto;
 }
 
-.img-2 {
-  width: auto;
-  height: auto;
+
+#cat {
+text-align: center;
+a: hover;
 }
 
-#footer {
-text-align: center;
-a:hover ;
-}
+
+#cat > a:hover {
+  background-color: whitesmoke;
+  
+  }
