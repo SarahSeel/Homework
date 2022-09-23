@@ -714,12 +714,10 @@ const user5Post = data.filter(post => post.userId === 5);
 console.log(user5Post);
 
 // then, create a list of title and body pairs
-const pairs = [];
-
-data.forEach(user5Post => {
-  let title = user5Post.title;
-  let body = user5Post.body;
-
-  pairs.push([title, body]);
+const user5TitleBodyPairs = user5Post.map(post => {
+  return {
+    title: post.title,
+    body: post.body
+  };
 });
-console.log(pairs);
+console.log(user5TitleBodyPairs);
